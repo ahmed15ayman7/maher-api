@@ -1,7 +1,7 @@
 {
   "name": "firstlessonnodejs",
   "version": "1.0.0",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "migrate:deploy": "npx prisma migrate deploy",
     "test": "echo \"Error: no test specified\" && exit 1",
