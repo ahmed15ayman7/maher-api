@@ -5,7 +5,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("databaseurl")
+  url      = "mongodb+srv://ahmed15ayman7ahmed2002:poiuy123poiuy123@maher.bggyo.mongodb.net/maher?retryWrites=true&w=majority&appName=maher"
 }
 model Product {
   id          String   @id @default(auto()) @map("_id") @db.ObjectId
