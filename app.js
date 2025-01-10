@@ -7,12 +7,12 @@ app.use(express.json());
 app.use(cors());
 
 // Route: Get all products
-app.get("/select", async (req, res) => {
+app.get("/show", async (req, res) => {
   try {
-    const products = await prisma.product.findMany();
-    res.json({ message: "success", products });
+    const user = await prisma.user.findMany();
+    res.json({ message: "success", user });
   } catch (error) {
-    res.status(500).json({ message: "Error fetching products", error });
+    res.status(500).json({ message: "Error fetching users", error });
     console.error(error);
   }
 });
